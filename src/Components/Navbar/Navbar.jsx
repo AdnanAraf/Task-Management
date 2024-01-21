@@ -10,7 +10,7 @@ const Navbar = () => {
       <p>E-Task</p> */}
       <div className="flex items-center justify-between">
         <div className="flex flex-col gap-4">
-          <h1 className="text-yellow-300 text-7xl font-semibold">Tasker</h1>
+          <h1 className=" text-yellow text-7xl font-semibold">Tasker</h1>
           <p className="text-sm text-white font-normal w-96">
             Effortlessly organize,prioritize,and Conquer tasks with Tasker -
             your personal productivity any for seamless goal achievement and
