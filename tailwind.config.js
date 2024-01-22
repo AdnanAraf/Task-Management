@@ -9,6 +9,7 @@ export default {
       yellow: "#fef08a",
       red: "#b91c1c",
       blue: "#38BDF8",
+
       primary: {
         500: "#2E90FA",
         600: "#1570EF",
@@ -16,5 +17,5 @@ export default {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

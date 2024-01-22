@@ -6,7 +6,7 @@ const Button = ({ setshowModal }) => {
       <div className="flex gap-3">
         <button
           onClick={setshowModal}
-          className=" bg-primary-600 px-3 py-2 text-white font-medium rounded-lg"
+          className=" bg-[#1570EF] px-3 py-2 text-white font-medium rounded-lg"
         >
           Add Task
         </button>

@@ -4,7 +4,7 @@ import TaskBody from "./TaskBody";
 const TaskBoard = () => {
   return (
     <div className="py-40">
-      <div className=" bg-gray">
+      <div>
         <TaskBody />
       </div>
     </div>

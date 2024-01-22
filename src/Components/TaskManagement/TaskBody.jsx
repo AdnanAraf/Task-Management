@@ -7,15 +7,22 @@ const TaskBody = () => {
   const [showModal, setshowModal] = useState(false);
   return (
     <div>
-      <div className="flex justify-between py-12 px-6">
-        <h1 className="text-white text-[18px] font-semibold ">Your Tasks</h1>
-        <div>
-          <Button setshowModal={() => setshowModal(!showModal)} />
-        </div>
-      </div>
+      <h1>Adnan Araf</h1>
       <div>
-        <TaskTable />
         {showModal && <TaskModal />}
+        <div className=" bg-gray">
+          <div className="flex justify-between py-12 px-6">
+            <h1 className="text-white text-[18px] font-semibold ">
+              Your Tasks
+            </h1>
+            <div>
+              <Button setshowModal={() => setshowModal(!showModal)} />
+            </div>
+          </div>
+          <div>
+            <TaskTable />
+          </div>
+        </div>
       </div>
     </div>
   );
