@@ -1,26 +1,29 @@
 import React from "react";
 
-const TaskTable = () => {
+const TaskTable = ({ showtask }) => {
   return (
-    <div className="py-6">
-      <div className="flex justify-between px-6 ">
-        <p className="text-white font-medium text-sm">Favourite</p>
-        <p className="text-white font-medium text-sm">Title</p>
-        <p className="text-white font-medium text-sm">Description</p>
-        <p className="text-white font-medium text-sm">Tags</p>
-        <p className="text-white font-medium text-sm">Priority</p>
-        <p className="text-white font-medium text-sm">Options</p>
-      </div>
-
-      <div className="py-6 ">
-        <div className="flex justify-between pl-20 items-center px-6 py-3  odd:bg-[#38BDF8]">
-          <p></p>
-          <p className="text-white font-normal text-sm">API</p>
-          <p className="text-white font-normal text-sm">Description</p>
-          <p className="text-white font-normal text-sm">Tags</p>
-          <p className="text-white font-normal text-sm">Priority</p>
-          <p className="text-white font-normal text-sm">Options</p>
-        </div>
+    <div className="py-3 px-6 ">
+      <div className="overflow-x-auto">
+        <table className="table table-xs  ">
+          <thead className="">
+            <th className="text-sm font-medium text-white">Favourite</th>
+            <th className="text-sm font-medium text-white">Title</th>
+            <th className="text-sm font-medium text-white">Description</th>
+            <th className="text-sm font-medium text-white">Tag</th>
+            <th className="text-sm font-medium text-white">Action</th>
+          </thead>
+          <tbody>
+            {showtask.map((item) => (
+              <tr className="border-y border-[1px] border-white rounded-lg">
+                <th>1</th>
+                <td>{item.title}</td>
+                <td>{item.description}</td>
+                <td>{item.tag}</td>
+                <td>{item.priority}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
     </div>
   );

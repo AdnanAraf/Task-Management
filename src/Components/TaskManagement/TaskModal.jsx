@@ -24,10 +24,10 @@ const TaskModal = ({ setshowModal, onSave }) => {
   };
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center ">
+    <div className="fixed inset-0 flex items-center justify-center z-50 ">
       <div className="absolute inset-0 bg-[#111827] opacity-75"></div>
 
-      <div className="relative bg-[#475569] opacity-80 px-6 py-6 rounded-lg w-full max-w-[740px]">
+      <div className="relative bg-[#475569] opacity-80 px-6 py-6 rounded-lg w-full  max-w-[740px]">
         <div className="flex justify-between ">
           <h1 className="text-2xl text-white ">Your task form</h1>
           <div className="h-10 w-10 hover:bg-gray opacity-75 rounded-full relative">

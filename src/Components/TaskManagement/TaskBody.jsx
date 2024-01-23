@@ -5,7 +5,10 @@ import TaskModal from "./TaskModal";
 
 const TaskBody = () => {
   const [showModal, setshowModal] = useState(false);
+  const [showtask, setShowTask] = useState([]);
   function handleAddtask(task) {
+    setShowTask([...showtask, task]);
+    setshowModal(false);
     console.log(task);
   }
   return (
@@ -28,7 +31,7 @@ const TaskBody = () => {
             </div>
           </div>
           <div>
-            <TaskTable />
+            <TaskTable showtask={showtask} />
           </div>
         </div>
       </div>
